@@ -1,0 +1,45 @@
+# server
+server:
+  runMode: debug # debug / test / release
+  host: 127.0.0.1
+  port: 8081
+  timezone: Asia/Shanghai
+
+# configParam
+configParam:
+  aeskey: MOOL*#&SHE$INK@D
+  buildInUser: 1,2,3,4
+  superRole: 20
+
+# db
+mysql:
+  mooLink:
+    host: 127.0.0.1
+    port: 3306
+    database:
+    user: root
+    password:
+    timezone: Asia/Shanghai
+
+# cache
+redis:
+  mooLink:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+
+# logs
+logs:
+  access:
+    file: ./logs/access.log
+    level: info # panic fatal error warn/warning info debug trace
+  application:
+    file: ./logs/app.log
+    level: warn # panic fatal error warn/warning info debug trace
+  service:
+    file: ./logs/service.log
+    level: info # panic fatal error warn/warning info debug trace
+  socket:
+    file: ./logs/socket.log
+    level: info # panic fatal error warn/warning info debug trace
